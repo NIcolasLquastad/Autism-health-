@@ -5,13 +5,13 @@ plugins {
 }
 
 android {
-    compileSdk 34
+    compileSdk 35
     namespace "com.autism.health.wear"
 
     defaultConfig {
         applicationId "com.autism.health.wear"
-        minSdk 26
-        targetSdk 34
+        minSdk 35
+        targetSdk 35
         versionCode 1
         versionName "0.1.0-alpha"
 
