@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Autism Health Companion</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_health">Health</string>
+    <string name="menu_mood">Mood</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_emergency">Emergency</string>
+
+    <!-- Main Screen -->
+    <string name="welcome_title">Welcome to Autism Health</string>
+    <string name="welcome_subtitle">Your personal health companion</string>
+    <string name="today_stats">Today's Stats</string>
+    <string name="steps">Steps</string>
+    <string name="heart_rate">Heart Rate</string>
+    <string name="sleep">Sleep</string>
+    <string name="water_intake">Water Intake</string>
+
+    <!-- Health Tracking -->
+    <string name="connect_samsung_health">Connect Samsung Health</string>
+    <string name="health_data_synced">Health data synced</string>
+    <string name="sync_error">Unable to sync. Please try again.</string>
+
+    <!-- Mood Tracking -->
+    <string name="mood_today">How are you feeling?</string>
+    <string name="mood_happy">Happy</string>
+    <string name="mood_calm">Calm</string>
+    <string name="mood_anxious">Anxious</string>
+    <string name="mood_overwhelmed">Overwhelmed</string>
+    <string name="mood_sad">Sad</string>
+    <string name="sensory_level">Sensory Sensitivity Level</string>
+
+    <!-- Settings -->
+    <string name="settings_accessibility">Accessibility</string>
+    <string name="settings_high_contrast">High Contrast Mode</string>
+    <string name="settings_text_size">Text Size</string>
+    <string name="settings_reduce_motion">Reduce Animations</string>
+    <string name="settings_dark_mode">Dark Mode</string>
+    <string name="settings_notifications">Notifications</string>
+    <string name="settings_about">About</string>
+
+    <!-- Emergency -->
+    <string name="emergency_contacts">Emergency Contacts</string>
+    <string name="emergency_add">Add Contact</string>
+    <string name="emergency_call">Call Now</string>
+    <string name="emergency_message">I need help</string>
+
+    <!-- Errors & Messages -->
+    <string name="error_generic">Something went wrong. Please try again.</string>
+    <string name="success">Success</string>
+    <string name="loading">Loading...</string>
+</resources>

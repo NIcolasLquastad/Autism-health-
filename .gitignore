@@ -1,0 +1,42 @@
+# Built files
+*.apk
+*.ap_
+*.dex
+*.class
+*.jar
+*.rar
+*.war
+*.ear
+*.aar
+
+# Gradle files
+.gradle/
+build/
+*.iml
+
+# IDE files
+.idea/
+*.iws
+*.ipr
+*.iml
+.vscode/
+.DS_Store
+
+# Android files
+local.properties
+.classpath
+.project
+.c9/
+*.c9search
+*.launch
+.settings/
+*.sublime-workspace
+
+# Other
+*.log
+*.swp
+*.swo
+*~
+proguard/
+.codekit-cache/
+thumbs.db

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.AutismHealth" parent="Theme.MaterialComponents.DayNight">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimaryVariant">@color/primary_variant</item>
+        <item name="colorSecondary">@color/secondary_color</item>
+        <item name="colorSecondaryVariant">@color/secondary_variant</item>
+        <item name="colorError">@color/error_color</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorOnError">@color/white</item>
+        <item name="colorOnBackground">@color/text_dark</item>
+        <item name="colorOnSurface">@color/text_dark</item>
+
+        <!-- Accessibility -->
+        <item name="android:windowAnimationScale">1.0</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Theme.AutismHealth.HighContrast" parent="Theme.AutismHealth">
+        <item name="colorPrimary">@color/high_contrast_primary</item>
+        <item name="colorSecondary">@color/high_contrast_secondary</item>
+    </style>
+
+    <style name="Theme.AutismHealth.ReducedMotion" parent="Theme.AutismHealth">
+        <item name="android:windowAnimationScale">0.0</item>
+    </style>
+</resources>

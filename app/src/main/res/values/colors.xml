@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors -->
+    <color name="primary_color">#6200EE</color>
+    <color name="primary_variant">#3700B3</color>
+    <color name="secondary_color">#03DAC6</color>
+    <color name="secondary_variant">#018786</color>
+
+    <!-- High Contrast Colors -->
+    <color name="high_contrast_primary">#000000</color>
+    <color name="high_contrast_secondary">#FFFF00</color>
+
+    <!-- Neutral Colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray_light">#F5F5F5</color>
+    <color name="gray_medium">#BDBDBD</color>
+    <color name="gray_dark">#424242</color>
+
+    <!-- Text Colors -->
+    <color name="text_dark">#212121</color>
+    <color name="text_light">#FFFFFF</color>
+    <color name="text_secondary">#757575</color>
+
+    <!-- Status Colors -->
+    <color name="error_color">#CF6679</color>
+    <color name="success_color">#4CAF50</color>
+    <color name="warning_color">#FFC107</color>
+    <color name="info_color">#2196F3</color>
+
+    <!-- Mood Colors -->
+    <color name="mood_happy">#FFD700</color>
+    <color name="mood_calm">#87CEEB</color>
+    <color name="mood_anxious">#FFA500</color>
+    <color name="mood_overwhelmed">#FF6B6B</color>
+    <color name="mood_sad">#4169E1</color>
+</resources>
