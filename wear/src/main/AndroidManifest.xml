@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Wearable Permissions -->
+    <uses-permission android:name="android.permission.BODY_SENSORS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="com.samsung.android.healthdata.permission.READ" />
+    <uses-permission android:name="com.samsung.android.healthdata.permission.WRITE" />
+    <uses-permission android:name="com.samsung.android.wearable.permission.RECEIVE_ONGOING_NOTIFICATION" />
+
+    <uses-feature android:name="android.hardware.type.watch" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AutismHealthWear"
+        tools:targetApi="31">
+
+        <!-- Main Wear Activity -->
+        <activity
+            android:name=".ui.WearMainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Health Monitoring Activity -->
+        <activity
+            android:name=".ui.WearHealthMonitorActivity"
+            android:exported="false" />
+
+        <!-- Mood Tracking Activity -->
+        <activity
+            android:name=".ui.WearMoodTrackingActivity"
+            android:exported="false" />
+
+        <!-- Settings Activity -->
+        <activity
+            android:name=".ui.WearSettingsActivity"
+            android:exported="false" />
+
+        <!-- Data Sync Service -->
+        <service
+            android:name=".service.WearDataSyncService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.autism.health.SYNC_DATA" />
+            </intent-filter>
+        </service>
+
+        <!-- Samsung Health Integration Service -->
+        <service
+            android:name=".service.SamsungHealthWearService"
+            android:exported="false" />
+
+        <!-- Health Monitor Service -->
+        <service
+            android:name=".service.HealthMonitorService"
+            android:exported="false" />
+
+        <!-- Wearable Listener Service -->
+        <service
+            android:name=".service.WearableListenerService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.wearable.BIND_LISTENER" />
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

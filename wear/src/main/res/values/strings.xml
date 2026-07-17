@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Autism Health Wear</string>
+    <string name="wear_app_name">Autism Health Watch</string>
+    <string name="wear_health_monitor">Health Monitor</string>
+    <string name="wear_mood_tracking">Mood Tracking</string>
+    <string name="wear_settings">Settings</string>
+    <string name="wear_heart_rate">Heart Rate</string>
+    <string name="wear_steps">Steps</string>
+    <string name="wear_calories">Calories</string>
+    <string name="wear_battery">Battery</string>
+    <string name="wear_sync_status">Sync Status</string>
+    <string name="wear_samsung_health">Samsung Health</string>
+</resources>

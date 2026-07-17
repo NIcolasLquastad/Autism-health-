@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.AutismHealthWear" parent="Theme.MaterialComponents">
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimaryVariant">@color/primary_variant</item>
+        <item name="colorSecondary">@color/secondary_color</item>
+        <item name="colorSecondaryVariant">@color/secondary_variant</item>
+        <item name="colorError">@color/error_color</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorOnError">@color/white</item>
+        <!-- Wear-specific: Disable animations for accessibility -->
+        <item name="android:windowAnimationScale">0.5</item>
+    </style>
+
+    <style name="Theme.AutismHealthWear.HighContrast" parent="Theme.AutismHealthWear">
+        <item name="colorPrimary">@color/high_contrast_primary</item>
+        <item name="colorSecondary">@color/high_contrast_secondary</item>
+    </style>
+</resources>
