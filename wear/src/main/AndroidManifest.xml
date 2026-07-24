@@ -39,12 +39,12 @@
         <!-- Mood Tracking Activity -->
         <activity
             android:name=".ui.WearMoodTrackingActivity"
-            android:exported="false" />
+            android:exported="true" />
 
         <!-- Settings Activity -->
         <activity
             android:name=".ui.WearSettingsActivity"
-            android:exported="false" />
+            android:exported="true />
 
         <!-- Data Sync Service -->
         <service
