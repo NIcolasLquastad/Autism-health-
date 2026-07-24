@@ -34,7 +34,7 @@
         <!-- Health Monitoring Activity -->
         <activity
             android:name=".ui.WearHealthMonitorActivity"
-            android:exported="false" />
+            android:exported="true" />
 
         <!-- Mood Tracking Activity -->
         <activity
