@@ -1,11 +1,22 @@
+<?xml version="1.0 apha" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!-- Permissions for Sensors -->
+    <!-- Sensor Permissions -->
     <uses-permission android:name="android.permission.BODY_SENSORS" />
     <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
 
-    <!-- Declare Wear OS hardware feature -->
-    <uses-feature android:name="android.hardware.type.watch" />
+    <!-- Hardware Feature Declarations -->
+    <uses-feature
+        android:name="android.hardware.type.watch"
+        android:required="true" />
+    
+    <!-- Sensor hardware features (optional so app installs if one is absent) -->
+    <uses-feature
+        android:name="android.hardware.sensor.heartrate"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.sensor.stepcounter"
+        android:required="false" />
 
     <application
         android:allowBackup="true"
@@ -13,16 +24,28 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@android:style/Theme.DeviceDefault">
-        
+
+        <!-- REQUIRED FOR WEAR OS: Defines if app functions independently without a companion phone app -->
+        <meta-data
+            android:name="com.google.android.wearable.standalone"
+            android:value="true" />
+
+        <!-- Wear OS system library -->
+        <uses-library
+            android:name="com.google.android.wearable"
+            android:required="false" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+                
                 <category android:name="android.intent.category.LAUNCHER" />
                 <category android:name="android.intent.category.NOTIFICATION_PREFERENCES" />
             </intent-filter>
         </activity>
+        
     </application>
 
 </manifest>
